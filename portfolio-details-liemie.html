@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails du Projet Cas Liémie - Techie</title>
+  <meta name="description" content="Détails du projet PPE 4 - Application Mobile Cas Liémie">
+  <meta name="keywords" content="Android Studio, Java, API REST, DB4O, BTS SIO, PPE">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <script src="header.js"></script>
+  <app-header></app-header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container position-relative">
+        <h1>Application Mobile pour Infirmières (Cas Liémie)</h1>
+        <p>Développement d'une application Android connectée à une API REST pour le cabinet infirmier Kalimie.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li class="current">Projet Cas Liémie</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            
+            <!-- Image de présentation (facultative) -->
+            <img src="assets/img/portfolio/app-2.jpg" alt="Aperçu du projet Android" class="img-fluid rounded shadow mb-4">
+
+            <div class="portfolio-description">
+              <h2>Projet : Application Mobile pour Infirmières (Cas Liémie)</h2>
+              
+              <h3 class="mt-4">1. Présentation du Projet</h3>
+              <p>
+                Le cabinet infirmier Kalimie gère les tournées médicales de patients à domicile. L'objectif de l'application Android est de permettre aux infirmières de consulter leur planning hebdomadaire et de saisir le compte-rendu de leurs visites directement chez le patient, même sans connexion internet.
+              </p>
+
+              <h3 class="mt-4">2. Ma Mission : Développement Android</h3>
+              <p>En tant que développeur Android de l'équipe SSII 1FO_SIO, j'ai réalisé une application embarquée sur une Solution Technique d'Accès (STA). Mes principales responsabilités incluaient :</p>
+              <ul>
+                <li><i class="bi bi-check2-circle text-primary me-2"></i><strong>Authentification sécurisée :</strong> Identification initiale via un appel à une API REST (Web Service) avec gestion de jetons JWT.</li>
+                <li><i class="bi bi-check2-circle text-primary me-2"></i><strong>Gestion du mode déconnecté :</strong> Rapatriement local des visites de la semaine (du lundi au samedi) pour une utilisation sans réseau.</li>
+                <li><i class="bi bi-check2-circle text-primary me-2"></i><strong>Saisie des interventions :</strong> Enregistrement des soins effectués (prévus ou ajoutés), du temps passé et des commentaires de l'infirmière.</li>
+                <li><i class="bi bi-check2-circle text-primary me-2"></i><strong>Synchronisation :</strong> Mise à jour des données vers le serveur central dès qu'une connexion est disponible.</li>
+              </ul>
+
+              <h3 class="mt-4">3. Compétences Techniques Mises en Œuvre</h3>
+              <ul>
+                <li><strong>Langage & Interface :</strong> Développement en Java avec une architecture MVC (Activity = Vue + Contrôleur) et utilisation de Fragments pour une navigation fluide.</li>
+                <li><strong>Stockage Local (SGBD Objet) :</strong> Utilisation de la base de données DB4O pour stocker les objets Visite localement sans avoir recours à un ORM complexe.</li>
+                <li><strong>Programmation Asynchrone :</strong> Implémentation de classes dérivées d'AsyncTask pour effectuer les requêtes réseau (HttpURLConnection) en tâche de fond sans bloquer l'interface utilisateur (UI Thread).</li>
+                <li><strong>Traitement de Données :</strong> Parsing de flux JSON avec la bibliothèque GSON pour transformer les réponses de l'API en objets Java utilisables.</li>
+                <li><strong>Gestion des Permissions :</strong> Mise en place du système de permissions dynamiques d'Android (Internet, lecture/écriture stockage, géolocalisation).</li>
+              </ul>
+
+              <h3 class="mt-4">4. Fonctionnalités Clés Réalisées</h3>
+              <ul>
+                <li><strong>Navigation par Menu :</strong> Création d'un menu dynamique permettant de se connecter, lister les visites, importer ou exporter les données, et se déconnecter.</li>
+                <li><strong>Affichage Optimisé :</strong> Utilisation d'une ListView avec un Adapter personnalisé (VisiteAdapter) et le pattern ViewHolder pour garantir un défilement fluide de la liste des patients.</li>
+                <li><strong>Sécurité locale :</strong> Stockage des identifiants cryptés en MD5 dans les SharedPreferences pour permettre une reconnexion rapide hors ligne.</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info shadow-sm p-4 rounded">
+              <h3>Informations du projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong> : Application Mobile (Android)</li>
+                <li><strong>Client</strong> : Cabinet Kalimie (Fictif)</li>
+                <li><strong>Technologies</strong> : Java, DB4O, API REST, JSON</li>
+                <li><strong>Code Source</strong> : <a href="https://github.com/DJghr/CasLiemie" target="_blank">Voir sur GitHub <i class="bi bi-box-arrow-up-right"></i></a></li>
+                <li class="mt-3"><a href="https://github.com/DJghr/CasLiemie" target="_blank" class="btn btn-primary w-100" style="background-color: var(--accent-color); border: none;"><i class="bi bi-github me-2"></i>Dépôt GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <script src="footer.js"></script>
+  <app-footer></app-footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
