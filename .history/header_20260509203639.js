@@ -27,7 +27,7 @@ class AppHeader extends HTMLElement {
                   </li>
                   <li class="dropdown"><a href="#"><span>Professionels</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                      <li><a href="index.html#stage-digital-users">Digital Users</a></li>
+                      <li><a href="index.html#stage-digital-usors">Digital Usors</a></li>
                       <li><a href="index.html#stage-cek">Cek Saint-Nazaire</a></li>
                     </ul>
                   </li>
