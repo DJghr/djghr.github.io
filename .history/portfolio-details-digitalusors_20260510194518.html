@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails du Stage Digitalusors - Techie</title>
+  <meta name="description" content="Détails du stage de 1ère année - API REST et Messagerie Sécurisée">
+  <meta name="keywords" content="Symfony, API REST, Vue.js, JWT, Stage, BTS SIO">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <script src="header.js"></script>
+  <app-header></app-header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container position-relative">
+        <h1>Stage 1ère année : Digitalusors</h1>
+        <p>Développement d'une API REST de Gestion de Projets et Messagerie Sécurisée.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li class="current">Stage Digitalusors</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            
+            <!-- Image de présentation (facultative) -->
+            <img src="assets/img/portfolio/digital-users-project.jpg" alt="Aperçu du projet Stage" class="img-fluid rounded shadow mb-4">
+
+            <div class="portfolio-description">
+              <h2>Projet : API REST de Gestion de Projets et Messagerie Sécurisée</h2>
+              
+              <h3 class="mt-4">1. Présentation du Contexte</h3>
+              <p>
+                Au sein de l'entreprise Digitalusors, j'ai été chargé de développer une application web permettant la gestion de projets collaboratifs. Ce projet m'a permis de monter en compétence en autonomie sur le framework <strong>Symfony 6/7</strong> et de mettre en œuvre une architecture découplée (API / Front-end).
+              </p>
+
+              <h3 class="mt-4">2. Architecture & Technologies</h3>
+              <ul>
+                <li><strong>Backend :</strong> Symfony avec API Platform pour la génération automatique de ressources REST.</li>
+                <li><strong>Base de données :</strong> PostgreSQL/MySQL avec l'ORM Doctrine pour la gestion des relations (One-To-Many entre Utilisateurs et Projets).</li>
+                <li><strong>Sécurité :</strong> Authentification via JWT (JSON Web Token) et gestion des rôles (RBAC).</li>
+                <li><strong>Front-end :</strong> Double implémentation pour comparer les technologies :
+                  <ul class="mt-2">
+                    <li>Rendu serveur via <strong>Twig</strong>.</li>
+                    <li>Application réactive (SPA) avec <strong>Vue.js</strong>.</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h3 class="mt-4">3. Fonctionnalités et Sécurisation</h3>
+              <p>Le cœur de ma mission s'est articulé autour de la sécurisation des échanges et de la gestion des données :</p>
+              <ul>
+                <li><i class="bi bi-shield-check text-primary me-2"></i><strong>Gestion des accès (ACL) :</strong> J'ai mis en place des règles de sécurité strictes. Un utilisateur ne peut voir que ses propres projets, tandis qu'un administrateur possède une vue globale.</li>
+                <li><i class="bi bi-chat-square-text text-primary me-2"></i><strong>Système de Messagerie :</strong> Développement d'un module permettant aux utilisateurs de poster des messages liés à des projets spécifiques, avec vérification systématique de la propriété du projet avant l'insertion.</li>
+                <li><i class="bi bi-envelope-check text-primary me-2"></i><strong>Réinitialisation de mot de passe :</strong> Implémentation d'un contrôleur de gestion des tokens de réinitialisation envoyés par email via Symfony Mailer.</li>
+                <li><i class="bi bi-lock text-primary me-2"></i><strong>Protection des données :</strong> Hachage des mots de passe en SHA-256 (via PasswordHasher) pour garantir la sécurité des comptes.</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info shadow-sm p-4 rounded">
+              <h3>Informations du stage</h3>
+              <ul>
+                <li><strong>Catégorie</strong> : Développement Backend & API</li>
+                <li><strong>Entreprise</strong> : Digitalusors</li>
+                <li><strong>Technologies</strong> : Symfony 6/7, Vue.js, API Platform, JWT, MySQL/PostgreSQL</li>
+                <li><strong>Période</strong> : Mai - Juin 2025</li>
+                
+                <li class="mt-4 pt-4 border-top">
+                  <div class="d-flex align-items-center text-muted">
+                    <i class="bi bi-info-circle fs-4 me-3"></i>
+                    <small>Le code source de ce projet a été réalisé en entreprise et est confidentiel.</small>
+                  </div>
+                </li>
+
+                <!-- Bouton GitHub désactivé ou caché pour l'instant -->
+                <!-- <li class="mt-3"><a href="#" target="_blank" class="btn btn-primary w-100" style="background-color: var(--accent-color); border: none;"><i class="bi bi-github me-2"></i>Dépôt GitHub</a></li> -->
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <script src="footer.js"></script>
+  <app-footer></app-footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

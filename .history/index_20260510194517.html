@@ -355,7 +355,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Adresse</h3>
+                  <h3>Address</h3>
                   <p>44600 Saint-Nazaire</p>
                   <p>Loire-Atlantique</p>
                 </div>
@@ -364,7 +364,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Téléphone</h3>
+                  <h3>Telephone</h3>
                   <p>+33 7 67 17 81 09</p>
                 </div>
               </div><!-- End Info Item -->
@@ -372,19 +372,17 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
+                  <h3>Email Us</h3>
                   <p>djebril.gheribi.pro@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-share"></i>
-                  <h3>Mes Réseaux</h3>
-                  <div class="d-flex mt-3">
-                    <a href="https://github.com/djghr" target="_blank" class="text-secondary fs-3 me-3" title="GitHub"><i class="bi bi-github"></i></a>
-                    <a href="#" target="_blank" class="text-secondary fs-3" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                  </div>
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>9:00AM - 05:00PM</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -393,30 +391,32 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="https://formsubmit.co/djebril.gheribi.pro@gmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <!-- Configuration FormSubmit -->
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_template" value="table">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Votre Nom" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Votre Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-12">
-                  <input type="text" class="form-control" name="_subject" placeholder="Sujet" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Votre Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-primary" style="background-color: var(--accent-color); border: none; padding: 10px 30px; border-radius: 4px; color: #fff;">Envoyer le message</button>
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
                 </div>
 
               </div>
@@ -443,6 +443,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
